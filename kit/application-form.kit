@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library - Sutherland Shire Council</title>
+    <!-- Bootstrap -->
+    <!-- @import components/_head-content.htm -->
+  </head>
+
+  <body>
+    <div class="container-fluid page-wrap">
+
+      <!-- @import components/_alert.htm -->
+
+      <!-- @import components/_header.htm -->
+
+      <!-- @import components/_navbar.htm -->
+
+      <!-- @import components/_breadcrumbs.htm -->
+
+      <section id="main" class="main row" role="main">
+
+          <div id="sidebar" class="col-md-3 col-lg-3 col-lg-offset-1 page-spotlight">
+            sidebar content
+          </div><!-- /sidebar -->
+
+          <div id="content" class="col-md-9 col-lg-6 content">
+
+            <h1>Join the Library</h1>
+            <p class="lead">Fill out the following application form to join the library.
+              When complete go to the information desk at the Library with your proof of
+              identity to finalise your membership and collect your library card.</p>
+
+              <div id="membershipConditions" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="#modalLabel" style="display: none;">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 id="modalLabel" class="modal-title">Conditions of Membership</h2>
+                    </div>
+                    <div class="modal-body">
+                      <li>I understand my library card is required to borrow items.</li>
+                      <li>I accept full responsibility for all items issued on my library card.</li>
+                      <li>I am responsible for any charges incurred on my library card
+                        including the replacement value and administrative fee for any
+                        items lost, damaged or not returned and those associated with
+                        value added services (in accordance with Council’s Schedule of
+                        Fees and Charges).</li>
+                      <li>I am responsible for the security of my card and must notify
+                        the library immediately if this card is lost or stolen. Until
+                        notice is received I am liable for any unauthorised use of the card.</li>
+                      <li>I will notify and provide identification of any changes to the
+                        details on this form. Failure to do so will result in my borrowing
+                        privileges being withdrawn.</li>
+                      <li>The Library does not censor resources used in, borrowed or accessed
+                        from the Library.</li>
+                      <li>Parents / Guardians are responsible for their child’s/children’s
+                        selection andmonitoring their use of library resources and Internet use.</li>
+                      <li>In the instance that I should use an electronic request form,
+                        Sutherland Shire Libraries may treat as signed by me any email
+                        request and declaration, under subsection 49(1) of the Copyright
+                        Act 1968, that bears my name, membership and pin number.</li>
+                      <li>I understand I must maintain a valid email address in order to
+                        receive email alerts.</li>
+                    </div>
+                    <div class="modal-footer">
+                      <a class="btn btn-default" href="Join-the-Library.html">Cancel</a>
+                      <a class="btn btn-primary" data-dismiss="modal">Continue</a>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+
+              <p>
+                <iframe src="https://www.sutherlandshire.nsw.gov.au/PubProEve_CusMan_Membership_Administration/#!/" scrolling="no" id="formframe" name="formframe" width="100%" frameborder="0" />
+              </p>
+
+          </div><!-- /content -->
+
+      </section><!--/main-->
+    </div><!--/container-->
+
+    <!-- @import components/_social.htm -->
+
+    <!-- @import components/_footer.htm -->
+
+  <script src="js/production/global-min.js"></script>
+  <script>
+    $(function () {
+      $('#membershipConditions').modal('show');
+    });
+  </script>
+  </body>
+</html>
