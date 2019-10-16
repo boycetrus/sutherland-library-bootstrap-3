@@ -52,14 +52,14 @@
           </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
 
-        <div class="col-xs-12">
+        <div id="content" class="col-xs-12 content">
           <h1>RSS to HTML via JSON</h1>
           <p class="lead">New Items Lists generated from RSS feeds that are fetched through the rss2json API to provide a JSON feed.</p>
-        </div>
 
-        <div id="sidebar" class="col-md-3 page-spotlight">
+        <div class="row">
+          <div id="sidebar" class="col-md-3 page-spotlight">
 
-            <div id="newItemsSelector" class="panel-group new-items-selector" role="tablist" aria-multiselectable="true">
+            <div id="newItemsSelector" class="panel-group new-items-selector" role="tablist" aria-multiselectable="false">
 
               <div class="panel panel-default">
                 <div class="panel-heading" role="tab" id="fiction">
@@ -130,7 +130,7 @@
 
         </div><!-- /sidebar -->
 
-        <div id="content" class="col-md-9 content">
+        <div id="list-content" class="col-md-9">
 
           <div class="loading">
             <p>Loading Data...</p>
@@ -143,16 +143,33 @@
           </div>
 
           <div id="newItemsData" class="new-items-data">
-            <h2></h2>
-            <p id="subscribe" class="lead">
-              Subscribe: <a id="emailSubscribe" class="btn btn-info btn-xs" data-icon="&#xe02a;">Email</a> <a id="rssSubscribe" class="btn btn-warning btn-xs" data-icon="&#xe01a;">RSS</a>
-            </p>
+            <p id="subscribe" class="pull-left"><a id="rssSubscribe" class="btn btn-warning btn-xs new-items-rss" data-icon="&#xe01a;" style="padding: 0 1px 0 4px; margin: 0.75em 1em 0 0;"><span class="sr-only">RSS</span></a></p>
+            <h2 class="double-spaced"></h2>
             <div id='newItems' class='new-items'></div>
           </div>
+
+        </div><!-- /list-content -->
+
+      </div><!-- /row -->
+
+        <div id="subscribe" class="row">
+          <div class="col-md-10 col-md-offset-1 col-lg-6 col-lg-offset-3">
+            <div id="email-subscribe" class="panel panel-default text-center">
+              <div class="panel-heading">
+                <h3 class="panel-title">Want these straight to your email?</h3>
+              </div>
+              <div class="panel-body">
+                <p>A selection of the new items lists are available as email subscriptions</p>
+                <p><a href="http://eepurl.com/M09RH" class="btn btn-primary btn-lg">Subscribe</a></p>
+              </div>
+            </div><!-- /email-subscribe -->
+          </div><!-- /column -->
+        </div><!-- /row subscribe -->
 
         </div><!-- /content -->
 
       </section><!--/main-->
+
     </div><!--/container-->
 
     <!-- @import components/_social.htm -->

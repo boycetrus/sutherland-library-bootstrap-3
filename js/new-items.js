@@ -12,7 +12,6 @@ function newItemsFail (webpacLink, feedName) {
 function populateList (source, title) {
   var xmlSource = 'http://webpac.sutherlandshire.nsw.gov.au/feeds/' + source + '.xml';
   var jsonSource = 'https://api.rss2json.com/v1/api.json?rss_url=http%3A%2F%2Fwebpac.sutherlandshire.nsw.gov.au%2Ffeeds%2F' + source + '.xml&api_key=jvnlekiplkayadkdwbhexjeopj6ohab8kofhr2ru&count=100&callback=';
-  var emailSource = 'http://feedburner.google.com/fb/a/mailverify?uri=SutherlandShireLibraries' + source + '&loc=en_US';
   var fallbackURL = 'http://webpac.sutherlandshire.nsw.gov.au/screens/' + source + '.html';
 
   //fetch the json feed
@@ -25,7 +24,6 @@ function populateList (source, title) {
     console.log(data);
     $('.loading').hide();
     $('#newItemsData > h2').text(title);
-    $('#emailSubscribe').attr('href', emailSource);
     $('#rssSubscribe').attr('href', xmlSource);
     $('#newItems').empty();
 
